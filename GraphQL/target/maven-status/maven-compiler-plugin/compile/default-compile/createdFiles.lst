@@ -1,0 +1,8 @@
+entities\Module$TypeModule.class
+repository\ModuleBusiness.class
+graphql\Mutations.class
+graphql\GraphQLEndPoint.class
+repository\UniteEnseignementBusiness.class
+entities\UniteEnseignement.class
+entities\Module.class
+graphql\Query.class

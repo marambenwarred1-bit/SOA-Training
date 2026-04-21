@@ -61,8 +61,19 @@ public class UniteEnseignement {
         this.semestre = semestre;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof UniteEnseignement)) return false;
 
+        UniteEnseignement that = (UniteEnseignement) o;
 
+        return getCode() == that.getCode()
+                && getCredits() == that.getCredits()
+                && getSemestre() == that.getSemestre()
+                && java.util.Objects.equals(getDomaine(), that.getDomaine())
+                && java.util.Objects.equals(getResponsable(), that.getResponsable());
+    }
     @Override
     public int hashCode() {
         return Objects.hash(getCode(), getDomaine(), getResponsable(), getCredits(), getSemestre());
